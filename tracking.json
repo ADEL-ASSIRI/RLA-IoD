@@ -1,0 +1,400 @@
+{
+ "formation": {
+  "1": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9972987929897357,
+    "tracked_fraction": 0.9934210069444445,
+    "rotations": 382.5,
+    "rot_per_drone_hour": 11.953125,
+    "link_ci95": 0.0011111753049545675
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9957488141353531,
+    "tracked_fraction": 0.9697855902777778,
+    "rotations": 956.5333333333333,
+    "rot_per_drone_hour": 29.891666666666666,
+    "link_ci95": 0.0009823993821869764
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.997001167085643,
+    "tracked_fraction": 0.9806221064814816,
+    "rotations": 945.4,
+    "rot_per_drone_hour": 29.54375,
+    "link_ci95": 0.0008149823710217147
+   }
+  },
+  "2": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9789093759280579,
+    "tracked_fraction": 0.9612164351851853,
+    "rotations": 382.5,
+    "rot_per_drone_hour": 11.953125,
+    "link_ci95": 0.0073062190733161605
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9586078480247191,
+    "tracked_fraction": 0.8970651041666666,
+    "rotations": 956.5333333333333,
+    "rot_per_drone_hour": 29.891666666666666,
+    "link_ci95": 0.009762969228505617
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.7408416734309602,
+    "tracked_fraction": 0.3211892361111111,
+    "rotations": 946.0333333333333,
+    "rot_per_drone_hour": 29.563541666666666,
+    "link_ci95": 0.00985927922825428
+   }
+  },
+  "4": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9493458895389356,
+    "tracked_fraction": 0.9151736111111113,
+    "rotations": 382.5,
+    "rot_per_drone_hour": 11.953125,
+    "link_ci95": 0.011979914493543294
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.8993795353407579,
+    "tracked_fraction": 0.7802647569444444,
+    "rotations": 956.5333333333333,
+    "rot_per_drone_hour": 29.891666666666666,
+    "link_ci95": 0.012786219630417702
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.47990271962579845,
+    "tracked_fraction": 0.13933738425925926,
+    "rotations": 946.0,
+    "rot_per_drone_hour": 29.5625,
+    "link_ci95": 0.009005526873538354
+   }
+  },
+  "8": {
+   "Fixed 300 s, async": {
+    "link_success": 0.8962279838678394,
+    "tracked_fraction": 0.8352864583333334,
+    "rotations": 382.5,
+    "rot_per_drone_hour": 11.953125,
+    "link_ci95": 0.014462850569275867
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.7730807506157749,
+    "tracked_fraction": 0.5805873842592593,
+    "rotations": 956.5333333333333,
+    "rot_per_drone_hour": 29.891666666666666,
+    "link_ci95": 0.020430866907050652
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.2839360630513171,
+    "tracked_fraction": 0.09003472222222224,
+    "rotations": 946.1333333333333,
+    "rot_per_drone_hour": 29.566666666666666,
+    "link_ci95": 0.007967536048862092
+   }
+  },
+  "16": {
+   "Fixed 300 s, async": {
+    "link_success": 0.8111964686990494,
+    "tracked_fraction": 0.7164343171296295,
+    "rotations": 382.5,
+    "rot_per_drone_hour": 11.953125,
+    "link_ci95": 0.018490236311334906
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.5833467399099933,
+    "tracked_fraction": 0.323906539351852,
+    "rotations": 956.5333333333333,
+    "rot_per_drone_hour": 29.891666666666666,
+    "link_ci95": 0.014815827387943443
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.1699307990778622,
+    "tracked_fraction": 0.07409722222222222,
+    "rotations": 946.6666666666666,
+    "rot_per_drone_hour": 29.583333333333332,
+    "link_ci95": 0.006046457770786599
+   }
+  }
+ },
+ "silence_g8": {
+  "0": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9954838446475197,
+    "tracked_fraction": 0.9917578125000001,
+    "rotations": 383.6333333333333,
+    "rot_per_drone_hour": 11.988541666666666,
+    "link_ci95": 0.00262466859998842
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9899867336782499,
+    "tracked_fraction": 0.9676649305555556,
+    "rotations": 958.8,
+    "rot_per_drone_hour": 29.9625,
+    "link_ci95": 0.003230889776868569
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.37502557842174106,
+    "tracked_fraction": 0.11568576388888889,
+    "rotations": 946.1333333333333,
+    "rot_per_drone_hour": 29.566666666666666,
+    "link_ci95": 0.010464922836944616
+   }
+  },
+  "2": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9625139426235937,
+    "tracked_fraction": 0.9336278935185186,
+    "rotations": 383.1,
+    "rot_per_drone_hour": 11.971875,
+    "link_ci95": 0.01005179922944908
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9162020467702746,
+    "tracked_fraction": 0.8147057291666666,
+    "rotations": 957.9333333333333,
+    "rot_per_drone_hour": 29.935416666666665,
+    "link_ci95": 0.012310250475740315
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.3303812594476995,
+    "tracked_fraction": 0.10020833333333336,
+    "rotations": 946.1333333333333,
+    "rot_per_drone_hour": 29.566666666666666,
+    "link_ci95": 0.010631123704354156
+   }
+  },
+  "5": {
+   "Fixed 300 s, async": {
+    "link_success": 0.8962279838678394,
+    "tracked_fraction": 0.8352864583333334,
+    "rotations": 382.5,
+    "rot_per_drone_hour": 11.953125,
+    "link_ci95": 0.014462850569275867
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.7730807506157749,
+    "tracked_fraction": 0.5805873842592593,
+    "rotations": 956.5333333333333,
+    "rot_per_drone_hour": 29.891666666666666,
+    "link_ci95": 0.020430866907050652
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.2839360630513171,
+    "tracked_fraction": 0.09003472222222224,
+    "rotations": 946.1333333333333,
+    "rot_per_drone_hour": 29.566666666666666,
+    "link_ci95": 0.007967536048862092
+   }
+  },
+  "10": {
+   "Fixed 300 s, async": {
+    "link_success": 0.7464255005164667,
+    "tracked_fraction": 0.6152815393518518,
+    "rotations": 381.6,
+    "rot_per_drone_hour": 11.925,
+    "link_ci95": 0.01730701216031266
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.5095706565333795,
+    "tracked_fraction": 0.24221093750000003,
+    "rotations": 953.8333333333334,
+    "rot_per_drone_hour": 29.807291666666668,
+    "link_ci95": 0.016660009852789693
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.22672888999969415,
+    "tracked_fraction": 0.07840277777777777,
+    "rotations": 946.1333333333333,
+    "rot_per_drone_hour": 29.566666666666666,
+    "link_ci95": 0.006953784027903072
+   }
+  },
+  "20": {
+   "Fixed 300 s, async": {
+    "link_success": 0.4572438106247331,
+    "tracked_fraction": 0.3295066550925927,
+    "rotations": 379.7,
+    "rot_per_drone_hour": 11.865625,
+    "link_ci95": 0.01964146542273653
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.21026311148452415,
+    "tracked_fraction": 0.0849019097222222,
+    "rotations": 949.1666666666666,
+    "rot_per_drone_hour": 29.661458333333332,
+    "link_ci95": 0.010737176374971432
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.16145750984334792,
+    "tracked_fraction": 0.06947916666666666,
+    "rotations": 946.1333333333333,
+    "rot_per_drone_hour": 29.566666666666666,
+    "link_ci95": 0.005376029302914429
+   }
+  },
+  "40": {
+   "Fixed 300 s, async": {
+    "link_success": 0.19112188196784693,
+    "tracked_fraction": 0.17071469907407408,
+    "rotations": 374.53333333333336,
+    "rot_per_drone_hour": 11.704166666666667,
+    "link_ci95": 0.0111546935775193
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.060276525883744395,
+    "tracked_fraction": 0.06432407407407408,
+    "rotations": 937.4666666666667,
+    "rot_per_drone_hour": 29.295833333333334,
+    "link_ci95": 0.00387402344985015
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.10320740939241628,
+    "tracked_fraction": 0.07079861111111112,
+    "rotations": 930.4,
+    "rot_per_drone_hour": 29.075,
+    "link_ci95": 0.0038434526074574106
+   }
+  }
+ },
+ "solo_density": {
+  "10": {
+   "Fixed 300 s, async": {
+    "link_success": 0.996638418079096,
+    "tracked_fraction": 0.9845333333333333,
+    "rotations": 59.7,
+    "rot_per_drone_hour": 11.940000000000001,
+    "link_ci95": 0.004392660901892469
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.998,
+    "tracked_fraction": 0.9861611111111112,
+    "rotations": 149.7,
+    "rot_per_drone_hour": 29.939999999999998,
+    "link_ci95": 0.002788916334526306
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.9892857142857142,
+    "tracked_fraction": 0.9924166666666666,
+    "rotations": 28.2,
+    "rot_per_drone_hour": 5.64,
+    "link_ci95": 0.02099999999999999
+   }
+  },
+  "25": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9986666666666666,
+    "tracked_fraction": 0.9970133333333333,
+    "rotations": 149.3,
+    "rot_per_drone_hour": 11.943999999999999,
+    "link_ci95": 0.0017422222222222333
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.997059521218565,
+    "tracked_fraction": 0.98078,
+    "rotations": 374.0,
+    "rot_per_drone_hour": 29.920000000000005,
+    "link_ci95": 0.0014488877284780505
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.9972412480974124,
+    "tracked_fraction": 0.9970888888888888,
+    "rotations": 71.2,
+    "rot_per_drone_hour": 5.696,
+    "link_ci95": 0.0036048763083497836
+   }
+  },
+  "50": {
+   "Fixed 300 s, async": {
+    "link_success": 0.995644302784075,
+    "tracked_fraction": 0.9883811111111112,
+    "rotations": 298.7,
+    "rot_per_drone_hour": 11.948000000000002,
+    "link_ci95": 0.002408856260912921
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9973247666623195,
+    "tracked_fraction": 0.9823122222222223,
+    "rotations": 747.9,
+    "rot_per_drone_hour": 29.915999999999997,
+    "link_ci95": 0.0013531328010476782
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.9951324858630173,
+    "tracked_fraction": 0.9954055555555555,
+    "rotations": 149.2,
+    "rot_per_drone_hour": 5.968,
+    "link_ci95": 0.005023127946055162
+   }
+  },
+  "100": {
+   "Fixed 300 s, async": {
+    "link_success": 0.996484076781444,
+    "tracked_fraction": 0.9896855555555556,
+    "rotations": 597.6,
+    "rot_per_drone_hour": 11.952,
+    "link_ci95": 0.0010337105338070745
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9936494923037777,
+    "tracked_fraction": 0.9598477777777777,
+    "rotations": 1495.3,
+    "rot_per_drone_hour": 29.906000000000006,
+    "link_ci95": 0.002468694687238236
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.9882567001992186,
+    "tracked_fraction": 0.9774,
+    "rotations": 357.4,
+    "rot_per_drone_hour": 7.147999999999999,
+    "link_ci95": 0.003011776780725461
+   }
+  },
+  "200": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9958118798282403,
+    "tracked_fraction": 0.9881786111111112,
+    "rotations": 1194.3,
+    "rot_per_drone_hour": 11.943000000000001,
+    "link_ci95": 0.0011229807930074206
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9892266899380899,
+    "tracked_fraction": 0.9127886111111112,
+    "rotations": 2989.0,
+    "rot_per_drone_hour": 29.889999999999997,
+    "link_ci95": 0.0011738242322873902
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.9766084688066707,
+    "tracked_fraction": 0.9433847222222222,
+    "rotations": 1033.8,
+    "rot_per_drone_hour": 10.338,
+    "link_ci95": 0.004168022317755411
+   }
+  },
+  "400": {
+   "Fixed 300 s, async": {
+    "link_success": 0.9914644953047486,
+    "tracked_fraction": 0.9782194444444444,
+    "rotations": 2389.8,
+    "rot_per_drone_hour": 11.948999999999998,
+    "link_ci95": 0.0013263183880609813
+   },
+   "Fixed 120 s, async": {
+    "link_success": 0.9801021369762053,
+    "tracked_fraction": 0.8694359722222222,
+    "rotations": 5975.8,
+    "rot_per_drone_hour": 29.878999999999998,
+    "link_ci95": 0.0017361805790878802
+   },
+   "RLA-IoD coordinated": {
+    "link_success": 0.9681558289501389,
+    "tracked_fraction": 0.8822819444444443,
+    "rotations": 3098.4,
+    "rot_per_drone_hour": 15.491999999999999,
+    "link_ci95": 0.003374333861069177
+   }
+  }
+ },
+ "seeds": 30
+}

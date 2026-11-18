@@ -1,0 +1,8 @@
+### Table 8. Persistent storage on the drone
+
+| Pool_size_k | Pool_bytes | Persistent_total_bytes | Bits |
+|---|---|---|---|
+| 10 | 1490 | 1644 | 13152 |
+| 25 | 3725 | 3879 | 31032 |
+| 50 | 7450 | 7604 | 60832 |
+| 100 | 14900 | 15054 | 120432 |

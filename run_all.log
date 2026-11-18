@@ -1,0 +1,87 @@
+
+=== run_attacks.py ===
+Honest session (control)                             300/300  -
+Replay of stale M1 (60 s old)                        0/300  stale timestamp
+Replay of recorded M3 in a new session               0/300  drone signature
+MitM substitutes GCS ephemeral key Y                 0/300  GCS signature
+MitM substitutes drone ephemeral key X               0/300  GCS signature
+Random bit-flip in M2                                0/300  cert signature (146); GCS signature (117); invalid curve point (19); GCS MAC (18)
+Random bit-flip in M3                                0/300  cert signature (165); drone signature (111); drone MAC (24)
+Rogue GCS (certificate from foreign TA)              0/300  cert signature
+Impersonating drone (foreign-TA pseudonym cert)      0/300  cert signature
+Stolen pseudonym certificate without its key         0/300  drone signature
+Revoked pseudonym presented                          0/300  cert revoked
+Expired pseudonym certificate                        0/300  cert expired
+Reflection (M2 returned as M3)                       0/300  malformed M3
+Replay of an in-session frame                        0/300  sequence
+Tampering with an in-session frame                   0/300  frame MAC
+Frame deletion / re-ordering (gap)                   0/300  sequence
+Leaked long-term keys, RLA-IoD                       0/300  session key not recoverable
+Leaked long-term key, static-ECDH design             300/300  -
+[run_attacks.py: 6s]
+
+=== bench.py ===
+{'Scheme': 'PSK-HMAC', 'Drone_CPU_ms': 0.008109677999999999, 'GCS_CPU_ms': 0.008096344000000002, 'Wire_bits': 832, 'Drone_PK_ops': 0, 'Forward_secrecy': 'no', 'Identity_hidden_from_GCS': 'no'}
+{'Scheme': 'Static-ECDH design', 'Drone_CPU_ms': 0.436390824, 'GCS_CPU_ms': 0.27303657499999995, 'Wire_bits': 2408, 'Drone_PK_ops': 4, 'Forward_secrecy': 'no', 'Identity_hidden_from_GCS': 'no'}
+{'Scheme': 'RLA-IoD, GCS cert cached', 'Drone_CPU_ms': 0.3275924, 'GCS_CPU_ms': 0.47352537400000005, 'Wire_bits': 3160, 'Drone_PK_ops': 4, 'Forward_secrecy': 'yes', 'Identity_hidden_from_GCS': 'yes'}
+{'Scheme': 'RLA-IoD, cold', 'Drone_CPU_ms': 0.560674792, 'GCS_CPU_ms': 0.567037133, 'Wire_bits': 4032, 'Drone_PK_ops': 5, 'Forward_secrecy': 'yes', 'Identity_hidden_from_GCS': 'yes'}
+[{'Forged_or_stale_M1': 'Fresh forgery, no cookie', 'GCS_cost_ms': 0.183501962, 'Relative': 1.0}, {'Forged_or_stale_M1': 'Stale replay (timestamp check)', 'GCS_cost_ms': 0.000725907, 'Relative': 0.003955854161384934}, {'Forged_or_stale_M1': 'Fresh forgery, cookie required', 'GCS_cost_ms': 0.00213107, 'Relative': 0.011613336319532106}, {'Forged_or_stale_M1': 'Legitimate Auth (reference)', 'GCS_cost_ms': 0.567037133, 'Relative': 3.0900875762843345}]
+[bench.py: 3s]
+
+=== projections.py ===
+{'component': 'RLA-IoD drone, cold', 'AVR_ms': 12126.0, 'CortexM4_ms': 1061.0, 'CortexM4_mJ': 35.013, 'RPiB+_ms': 42.8, 'pk_ops': 5}
+{'component': 'RLA-IoD drone, cert cached', 'AVR_ms': 9476.0, 'CortexM4_ms': 752.0, 'CortexM4_mJ': 24.816, 'RPiB+_ms': 33.599999999999994, 'pk_ops': 4}
+{'component': '+ precomputed ephemeral key', 'AVR_ms': 7256.0, 'CortexM4_ms': 608.0, 'CortexM4_mJ': 20.064, 'RPiB+_ms': 25.7, 'pk_ops': 3}
+{'component': 'RLA-IoD GCS side', 'AVR_ms': 12126.0, 'CortexM4_ms': 1061.0, 'CortexM4_mJ': 35.013, 'RPiB+_ms': 42.8, 'pk_ops': 5}
+{'component': 'Static-ECDH design, drone', 'AVR_ms': 9906.0, 'CortexM4_ms': 917.0, 'CortexM4_mJ': 30.261, 'RPiB+_ms': 34.9, 'pk_ops': 4}
+{'component': 'One DH ratchet, either side', 'AVR_ms': 4440.0, 'CortexM4_ms': 288.0, 'CortexM4_mJ': 9.504, 'RPiB+_ms': 15.8, 'pk_ops': 2}
+[projections.py: 0s]
+
+=== run_span.py ===
+150 missions x 20000 msgs; attack fraction 0.0378; disclosures/1000 msgs 0.467
+sqrt law: L* = 138.6, empirical minimiser = 134
+{'mu': 3, 'Cost_ms_per_msg': np.float64(0.814), 'Exposure_per_1000': np.float64(134.153), 'Exposure_CI95': np.float64(13.074), 'FixedL_exposure_equal_cost': 92.81, 'Reduction_pct': np.float64(-44.546), 'Oracle_reduction_pct': np.float64(-67.349)}
+{'mu': 10, 'Cost_ms_per_msg': np.float64(1.039), 'Exposure_per_1000': np.float64(71.732), 'Exposure_CI95': np.float64(6.94), 'FixedL_exposure_equal_cost': 71.312, 'Reduction_pct': np.float64(-0.589), 'Oracle_reduction_pct': np.float64(-11.003)}
+{'mu': 30, 'Cost_ms_per_msg': np.float64(1.39), 'Exposure_per_1000': np.float64(40.47), 'Exposure_CI95': np.float64(4.033), 'FixedL_exposure_equal_cost': 51.873, 'Reduction_pct': np.float64(21.983), 'Oracle_reduction_pct': np.float64(21.646)}
+{'mu': 100, 'Cost_ms_per_msg': np.float64(2.088), 'Exposure_per_1000': np.float64(18.644), 'Exposure_CI95': np.float64(1.892), 'FixedL_exposure_equal_cost': 34.838, 'Reduction_pct': np.float64(46.483), 'Oracle_reduction_pct': np.float64(45.549)}
+{'mu': 300, 'Cost_ms_per_msg': np.float64(3.24), 'Exposure_per_1000': np.float64(8.301), 'Exposure_CI95': np.float64(0.911), 'FixedL_exposure_equal_cost': 21.515, 'Reduction_pct': np.float64(61.416), 'Oracle_reduction_pct': np.float64(56.276)}
+{'mu': 1000, 'Cost_ms_per_msg': np.float64(5.54), 'Exposure_per_1000': np.float64(4.465), 'Exposure_CI95': np.float64(0.448), 'FixedL_exposure_equal_cost': 12.269, 'Reduction_pct': np.float64(63.609), 'Oracle_reduction_pct': np.float64(59.613)}
+{'mu': 3000, 'Cost_ms_per_msg': np.float64(9.469), 'Exposure_per_1000': np.float64(2.481), 'Exposure_CI95': np.float64(0.266), 'FixedL_exposure_equal_cost': 6.953, 'Reduction_pct': np.float64(64.324), 'Oracle_reduction_pct': np.float64(65.101)}
+{'Policy': 'Re-handshake every 300 s (static timeout)', 'CPU_s_per_h': np.float64(15.778799999999952), 'Duty_pct': np.float64(0.4382999999999987), 'Energy_J_per_h': np.float64(0.5207003999999985), 'Exposed_per_1000': np.float64(678.985)}
+{'Policy': 'Fixed DH-ratchet span L = 3', 'CPU_s_per_h': np.float64(3459.9744000017454), 'Duty_pct': np.float64(96.11040000004847), 'Energy_J_per_h': np.float64(114.17915520005761), 'Exposed_per_1000': np.float64(0.453)}
+{'Policy': 'Fixed DH-ratchet span L = 50', 'CPU_s_per_h': np.float64(211.67999999994862), 'Duty_pct': np.float64(5.8799999999985735), 'Energy_J_per_h': np.float64(6.985439999998305), 'Exposed_per_1000': np.float64(11.801666666666666)}
+{'Policy': 'Fixed DH-ratchet span L = 500', 'CPU_s_per_h': np.float64(25.056000000009465), 'Duty_pct': np.float64(0.696000000000263), 'Energy_J_per_h': np.float64(0.8268480000003124), 'Exposed_per_1000': np.float64(117.81833333333333)}
+{'Policy': 'RLA-IoD adaptive (mu = 30)', 'CPU_s_per_h': np.float64(50.026415999995045), 'Duty_pct': np.float64(1.389622666666529), 'Energy_J_per_h': np.float64(1.6508717279998366), 'Exposed_per_1000': np.float64(40.47)}
+{'Policy': 'RLA-IoD adaptive (mu = 100)', 'CPU_s_per_h': np.float64(75.1688160000106), 'Duty_pct': np.float64(2.0880226666669612), 'Energy_J_per_h': np.float64(2.4805709280003496), 'Exposed_per_1000': np.float64(18.644000000000002)}
+{'Policy': 'RLA-IoD adaptive (mu = 300)', 'CPU_s_per_h': np.float64(116.62353600002528), 'Duty_pct': np.float64(3.2395426666673695), 'Energy_J_per_h': np.float64(3.8485766880008345), 'Exposed_per_1000': np.float64(8.301333333333332)}
+[run_span.py: 27s]
+
+=== run_tracking.py ===
+{'Policy': 'Fixed 300 s, async', 'g=1': '1.00 (0.99)', 'g=2': '0.98 (0.96)', 'g=4': '0.95 (0.92)', 'g=8': '0.90 (0.84)', 'g=16': '0.81 (0.72)', 'Rotations_per_drone_hour_g8': 11.953125}
+{'Policy': 'Fixed 120 s, async', 'g=1': '1.00 (0.97)', 'g=2': '0.96 (0.90)', 'g=4': '0.90 (0.78)', 'g=8': '0.77 (0.58)', 'g=16': '0.58 (0.32)', 'Rotations_per_drone_hour_g8': 29.891666666666666}
+{'Policy': 'RLA-IoD coordinated', 'g=1': '1.00 (0.98)', 'g=2': '0.74 (0.32)', 'g=4': '0.48 (0.14)', 'g=8': '0.28 (0.09)', 'g=16': '0.17 (0.07)', 'Rotations_per_drone_hour_g8': 29.566666666666666}
+silence sweep (g=8, link success):
+0 {'Fixed 30': 1.0, 'Fixed 12': 0.99, 'RLA-IoD ': 0.38}
+2 {'Fixed 30': 0.96, 'Fixed 12': 0.92, 'RLA-IoD ': 0.33}
+5 {'Fixed 30': 0.9, 'Fixed 12': 0.77, 'RLA-IoD ': 0.28}
+10 {'Fixed 30': 0.75, 'Fixed 12': 0.51, 'RLA-IoD ': 0.23}
+20 {'Fixed 30': 0.46, 'Fixed 12': 0.21, 'RLA-IoD ': 0.16}
+40 {'Fixed 30': 0.19, 'Fixed 12': 0.06, 'RLA-IoD ': 0.1}
+solo density:
+10 {'Fixed 30': (1.0, 11.9), 'Fixed 12': (1.0, 29.9), 'RLA-IoD ': (0.99, 5.6)}
+25 {'Fixed 30': (1.0, 11.9), 'Fixed 12': (1.0, 29.9), 'RLA-IoD ': (1.0, 5.7)}
+50 {'Fixed 30': (1.0, 11.9), 'Fixed 12': (1.0, 29.9), 'RLA-IoD ': (1.0, 6.0)}
+100 {'Fixed 30': (1.0, 12.0), 'Fixed 12': (0.99, 29.9), 'RLA-IoD ': (0.99, 7.1)}
+200 {'Fixed 30': (1.0, 11.9), 'Fixed 12': (0.99, 29.9), 'RLA-IoD ': (0.98, 10.3)}
+400 {'Fixed 30': (0.99, 11.9), 'Fixed 12': (0.98, 29.9), 'RLA-IoD ': (0.97, 15.5)}
+[run_tracking.py: 69s]
+
+=== make_figures.py ===
+wrote fig4_primitives_projection
+wrote fig5_cpu_and_sizes
+wrote fig6_flood
+wrote fig7_span_control
+wrote fig8_trace
+wrote fig9_tracker
+wrote fig10_solo_density
+[make_figures.py: 2s]

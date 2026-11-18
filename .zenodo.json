@@ -1,0 +1,8 @@
+{
+  "title": "RLA-IoD: reference implementation, adversary harness and simulations",
+  "upload_type": "software",
+  "description": "Code and generated results for the article 'RLA-IoD: Risk-Adaptive Authentication and Coordinated Pseudonym Management for the Internet of Drones'.",
+  "creators": [{"name": "Assiri, Adel Saad", "affiliation": "King Khalid University", "orcid": "0000-0003-1268-0325"}],
+  "license": "MIT",
+  "keywords": ["internet of drones", "authentication", "ratchet", "pseudonym"]
+}

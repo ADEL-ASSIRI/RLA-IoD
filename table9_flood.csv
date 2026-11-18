@@ -1,0 +1,5 @@
+Forged_or_stale_M1,GCS_cost_ms,Relative
+"Fresh forgery, no cookie",0.183501962,1.0
+Stale replay (timestamp check),0.000725907,0.003955854161384934
+"Fresh forgery, cookie required",0.00213107,0.011613336319532106
+Legitimate Auth (reference),0.567037133,3.0900875762843345

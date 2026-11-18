@@ -1,0 +1,50 @@
+{
+ "RLA-IoD drone, cold": {
+  "component": "RLA-IoD drone, cold",
+  "AVR_ms": 12126.0,
+  "CortexM4_ms": 1061.0,
+  "CortexM4_mJ": 35.013,
+  "RPiB+_ms": 42.8,
+  "pk_ops": 5
+ },
+ "RLA-IoD drone, cert cached": {
+  "component": "RLA-IoD drone, cert cached",
+  "AVR_ms": 9476.0,
+  "CortexM4_ms": 752.0,
+  "CortexM4_mJ": 24.816,
+  "RPiB+_ms": 33.599999999999994,
+  "pk_ops": 4
+ },
+ "+ precomputed ephemeral key": {
+  "component": "+ precomputed ephemeral key",
+  "AVR_ms": 7256.0,
+  "CortexM4_ms": 608.0,
+  "CortexM4_mJ": 20.064,
+  "RPiB+_ms": 25.7,
+  "pk_ops": 3
+ },
+ "RLA-IoD GCS side": {
+  "component": "RLA-IoD GCS side",
+  "AVR_ms": 12126.0,
+  "CortexM4_ms": 1061.0,
+  "CortexM4_mJ": 35.013,
+  "RPiB+_ms": 42.8,
+  "pk_ops": 5
+ },
+ "Static-ECDH design, drone": {
+  "component": "Static-ECDH design, drone",
+  "AVR_ms": 9906.0,
+  "CortexM4_ms": 917.0,
+  "CortexM4_mJ": 30.261,
+  "RPiB+_ms": 34.9,
+  "pk_ops": 4
+ },
+ "One DH ratchet, either side": {
+  "component": "One DH ratchet, either side",
+  "AVR_ms": 4440.0,
+  "CortexM4_ms": 288.0,
+  "CortexM4_mJ": 9.504,
+  "RPiB+_ms": 15.8,
+  "pk_ops": 2
+ }
+}

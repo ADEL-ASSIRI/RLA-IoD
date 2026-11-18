@@ -1,0 +1,7 @@
+component,AVR_ms,CortexM4_ms,CortexM4_mJ,RPiB+_ms
+"RLA-IoD drone, cold",12126.0,1061.0,35.013,42.8
+"RLA-IoD drone, cert cached",9476.0,752.0,24.816,33.599999999999994
++ precomputed ephemeral key,7256.0,608.0,20.064,25.7
+RLA-IoD GCS side,12126.0,1061.0,35.013,42.8
+"Static-ECDH design, drone",9906.0,917.0,30.261,34.9
+"One DH ratchet, either side",4440.0,288.0,9.504,15.8

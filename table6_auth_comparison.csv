@@ -1,0 +1,5 @@
+Scheme,Drone_CPU_ms,GCS_CPU_ms,Wire_bits,Drone_PK_ops,Forward_secrecy,Identity_hidden_from_GCS
+PSK-HMAC,0.008109677999999999,0.008096344000000002,832,0,no,no
+Static-ECDH design,0.436390824,0.27303657499999995,2408,4,no,no
+"RLA-IoD, GCS cert cached",0.3275924,0.47352537400000005,3160,4,yes,yes
+"RLA-IoD, cold",0.560674792,0.567037133,4032,5,yes,yes
